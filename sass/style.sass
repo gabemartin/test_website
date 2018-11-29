@@ -1,0 +1,42 @@
+@import compass
+
+$color: #484
+*
+  margin: 0
+  padding: 0
+body
+  background: $color
+section
+  margin: 0
+  position: absolute
+  top: 0
+  left: 0
+  overflow: hidden
+area
+  display: block
+div
+  width: 20px
+  height: 20px
+  float: left
+  transition: background 2s ease-out
+  margin: 0
+  font-size: 9px
+  color: lighten($color, 5)
+  &.color1
+    transition: background 1s ease-out
+    background-color: $color
+    &:hover
+      background-color: lighten($color, 2)
+  &.color2
+    transition: background 3s ease-out
+    background-color: lighten($color, 4)
+    &:hover
+      background-color: lighten($color, 6)
+  &.color3, &.color4
+    transition: background 4s ease-out
+    background-color: lighten($color, 8)
+    &:hover
+      background-color: lighten($color, 10)
+p
+  overflow: hidden
+
